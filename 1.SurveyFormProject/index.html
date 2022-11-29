@@ -5,5 +5,32 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css" />
     </head>
-    <body></body>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Here you can give us your feedback about our ASP.NET beginner course. We'll be glad to find out your opinion.</p>
+        <form id="survey-form">
+            <label id="name-label">
+                Enter your name: 
+                <input type="text" id="name" placeholder="Your name is..." required />
+            </label>
+            <label id="email-label">
+                Enter your email: 
+                <input type="email" id="email" placeholder="example@mail.com" required />
+            </label>
+            <label id="number-label">
+                Enter your age (not required): 
+                <input type="number" id="number" min="12" max="120" placeholder="Years" />
+            </label>
+            <label>
+                How do you assess your programing skill level before course starting? 
+                <select id="dropdown">
+                    <option>Beginner</option>
+                    <option>Quite expirenced</option>
+                </select>
+            </label>
+            <fieldset>
+
+            </fieldset>
+        </form>
+    </body>
 </html>
