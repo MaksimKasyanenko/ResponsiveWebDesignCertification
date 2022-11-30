@@ -8,57 +8,68 @@
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Here you can give us your feedback about our ASP.NET beginner course. We'll be glad to find out
-        your opinion.</p>
-    <form id="survey-form">
-        <fieldset>
-            <label id="name-label">
-                Enter your name:
-                <input type="text" id="name" placeholder="My name is..." required />
-            </label>
-            <label id="email-label">
-                Enter your email:
-                <input type="email" id="email" placeholder="example@mail.com" required />
-            </label>
-            <label id="number-label">
-                Enter your age (not required):
-                <input type="number" id="number" min="12" max="120" placeholder="Years" />
-            </label>
-        </fieldset>
+    <div class="container">
+        <header>
+            <h1 class="text-center" id="title">Survey Form</h1>
+            <p class="text-center" id="description">Give us your feedback about our programing beginner course</p>
+        </header>
+        <div class="form-container">
+            <form action="javascript:alert('OK');" id="survey-form">
+                <fieldset>
+                    <label id="name-label">
+                        Enter your name:
+                        <input type="text" id="name" placeholder="My name is..." required />
+                    </label>
+                    <label id="email-label">
+                        Enter your email:
+                        <input type="email" id="email" placeholder="example@mail.com" required />
+                    </label>
+                    <label id="number-label">
+                        Enter your age (not required):
+                        <input type="number" id="number" min="12" max="120" placeholder="Years" />
+                    </label>
+                </fieldset>
 
-        <fieldset>
-            <p>How do you assess your programing skill level before course starting?</p>
-            <label><input type="radio" name="self-assess" /> Beginner</label>
-            <label><input type="radio" name="self-assess" /> Elementary</label>
-            <label><input type="radio" name="self-assess" /> Quite experienced</label>
-        </fieldset>
+                <fieldset>
+                    <p>How do you assess your programing skill level before course starting?</p>
+                    <label><input type="radio" name="self-assess" /> Beginner</label>
+                    <label><input type="radio" name="self-assess" /> Elementary</label>
+                    <label><input type="radio" name="self-assess" /> Quite experienced</label>
+                </fieldset>
 
-        <fieldset>
-            <label>What grade do you give to our course? 
-                <select id="dropdown">
-                    <option selected value="">--Give a mark, please--</option>
-                    <option value="1">Bad</option>
-                    <option value="2">Not bad</option>
-                    <option value="3">Normal</option>
-                    <option value="4">Good</option>
-                    <option value="5">Perfect</option>
-                </select>
-            </label>
-            <div>
-                <p>What kind of lessons do you like best of all?</p>
-                <label><input type="checkbox" value="theory" /> Theory class</label>
-                <label><input type="checkbox" value="practice" /> Practice class</label>
-                <label><input type="checkbox" value="conversation" /> Free conversation hour</label>
-                <label><input type="checkbox" value="project" /> Work on the project</label>
-            </div>
-            <label>
-                Write some additional comment 
-                <textarea></textarea>
-            </label>
-            <input typ="submit" id="submit" />
-        </fieldset>
-    </form>
+                <fieldset>
+                    <label>What grade do you give to our course?
+                        <select id="dropdown">
+                            <option selected value="">--Assess, please--</option>
+                            <option value="1">Bad</option>
+                            <option value="2">Not bad</option>
+                            <option value="3">Normal</option>
+                            <option value="4">Good</option>
+                            <option value="5">Perfect</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <p>What kind of lessons do you like best of all?</p>
+                        <label><input type="checkbox" value="theory" /> Theory class</label>
+                        <label><input type="checkbox" value="practice" /> Practice class</label>
+                        <label><input type="checkbox" value="conversation" /> Free conversation hour</label>
+                        <label><input type="checkbox" value="project" /> Work on the project</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <label>
+                        Write some additional comment
+                        <textarea rows="5" placeholder="Enter your comment..."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
