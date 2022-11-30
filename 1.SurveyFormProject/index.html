@@ -25,16 +25,17 @@
                 Enter your age (not required):
                 <input type="number" id="number" min="12" max="120" placeholder="Years" />
             </label>
-            <div>
-                <p>How do you assess your programing skill level before course starting?</p>
-                <label><input type="radio" name="self-assess" /> Beginner</label>
-                <label><input type="radio" name="self-assess" /> Elementary</label>
-                <label><input type="radio" name="self-assess" /> Quite experienced</label>
-            </div>
         </fieldset>
+
+        <p>How do you assess your programing skill level before course starting?</p>
         <fieldset>
-            <div>
-                <p>What grade do you give to our course?</p>
+            <label><input type="radio" name="self-assess" /> Beginner</label>
+            <label><input type="radio" name="self-assess" /> Elementary</label>
+            <label><input type="radio" name="self-assess" /> Quite experienced</label>
+        </fieldset>
+
+        <fieldset>
+            <label>What grade do you give to our course? 
                 <select id="dropdown">
                     <option selected value="">--Give a mark, please--</option>
                     <option value="1">Bad</option>
@@ -43,7 +44,7 @@
                     <option value="4">Good</option>
                     <option value="5">Perfect</option>
                 </select>
-            </div>
+            </label>
             <div>
                 <p>What kind of lessons do you like best of all?</p>
                 <label><input type="checkbox" value="theory" /> Theory class</label>
